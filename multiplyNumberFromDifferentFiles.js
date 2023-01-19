@@ -24,14 +24,14 @@ readFile('file.txt')
 	.then((firstNumber) => {
 		ans *= firstNumber;
 		return readFile('file2.txt');}
-	).catch(_ => console.log(ans))
+	).catch(() => console.log(ans))
 	.then(secondNumber => {
 		ans *= secondNumber;
 		return readFile('file3.txt');
 	}).
-	catch(_2 => console.log(ans))
+	catch(() => console.log(ans))
 	.then(thirdNumber => {
 		ans *= thirdNumber;
 		return;
 	})
-	.catch(_3 => console.log(ans));
+	.catch(() => console.log(ans));
